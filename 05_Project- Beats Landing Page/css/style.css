@@ -1,0 +1,621 @@
+:root {
+    --color-0: #0f0f10;
+    --color-1: #f2f2f3;
+    --color-3: #ffffff;
+    --color-4: #000000;
+    --color-5: #87898b;
+}
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     transition: all 0.5s ease;
+}
+
+
+.container {
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: var(--color-4);
+}
+
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-lists ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.nav-lists ul li {
+    padding: 6px 13px;
+    border: 3px solid #000000;
+}
+
+.nav-lists ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+.nav-lists ul li:hover {
+    box-shadow: inset 0 0 1em 0 #ffffff, 0 0 0.6em #ffffff;
+    border: 3px solid #ffffff;
+    cursor: pointer;
+}
+
+.nav-lists button {
+    padding: 10px 40px;
+    border-radius: 7px;
+    border: 1px solid var(--color-0);
+    color: #ffffff;
+    background-color: var(--color-0);
+    cursor: pointer;
+}
+
+
+.headphone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 14%;
+}
+
+.headphone img {
+    width: 100%;
+}
+
+section {
+    padding: 20px 10%;
+    background-color: #000000;
+}
+
+.hero-header h1 {
+    font-size: 2.7rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.hero-section-bag {
+    color: #ffffff;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 15%;
+}
+
+.one-ear img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-header {
+    position: relative;
+    right: 30%;
+}
+
+.hero-section-bag {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 25%;
+}
+
+.hero-bag {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 7px;
+    background-color: var(--color-0);
+    /* padding-right: 80px; */
+    margin-right: 80px;
+}
+
+.hero-bag:hover {
+    cursor: pointer;
+}
+
+
+.hero-section-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.hero-header-para {
+    padding-top: 50px;
+}
+
+
+.hero-section-sponsors {
+    display: grid;
+    grid-template-columns: 124px 124px 124px 124px;
+    align-content: center;
+    justify-content: space-between;
+    padding: 5% 4%;
+}
+
+.sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 59px;
+    width: 124px;
+}
+
+.appleLogo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appleLogo:hover {
+    box-shadow: inset 0 0 1.8rem 0 #66615b, 0 0 0.6rem 0 #66615b;
+    border: #66615b 4px solid;
+}
+
+.spotifyLogo {
+    padding: 8px;
+    border: #000000 4px solid;
+}
+
+.spotifyLogo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotifyLogo:hover {
+    box-shadow: inset 0 0 1.8rem 0 #1ccc5b, 0 0 0.6rem 0 #1ccc5b;
+    border: #1ccc5b 4px solid;
+}
+
+.amazonLogo {
+    border: #000000 4px solid;
+}
+
+.amazonLogo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.amazonLogo:hover {
+    box-shadow: inset 0 0 1.8rem 0 #FF9400, 0 0 0.6rem 0 #FF9400;
+    border: #FF9400 4px solid;
+}
+
+
+.youtubeLogo {
+    border: #000000 4px solid;
+}
+
+.youtubeLogo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtubeLogo:hover {
+    box-shadow: inset 0 0 1.8rem 0 #ff0000, 0 0 0.6rem 0 #ff0000;
+    border: #ff0000 4px solid;
+}
+
+
+.specs-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 30px 10%;
+}
+
+.specs-section-main {
+    display: flex;
+    gap: 30px;
+}
+
+.specs-section-type {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.specs-1 p, .specs-2 p, .specs-3 p, .specs-4 p {
+    font-size: 0.9rem;
+    color: #87898b;
+}
+
+.specs-2 {
+    transform: translateX(-20%);
+}
+
+.specs-3 {
+    transform: translateX(-20%);
+}
+
+.specs-headphone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specs-headphone img {
+    width: 95%;
+}
+
+
+.case-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 5%;
+    background-color: var(--color-4);
+}
+
+.case-logo {
+    display: flex;
+    color: #ffffff;
+    gap: 40px;
+}
+
+.case-section-main {
+    display: flex;
+    gap: 40px;
+    color: #ffffff;
+}
+
+.case-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.case-image img {
+    width: 80%;
+}
+
+.case-image img:hover {
+    width: 100%;
+}
+
+.case-button-para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.case-para p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: var(--color-5);
+}
+
+.case-button {
+    display: flex;
+}
+
+.case-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.case-button div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.case-button div img {
+    width: 18px;
+    height: 18px;
+}
+
+.music {
+    padding-top: 8%;
+    color: #ffffff;
+    padding: 30px 15%;
+    background-color: #000000;
+}
+
+.music-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 20px;
+    border-radius: 8px;
+    background-color: #0f0f10;
+}
+
+
+.music-headphone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* cursor: pointer; */
+}
+
+.music-headphone img {
+    width: 90%;
+}
+
+.buynow {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 18px;
+    border-radius: 7px;
+    background-color: var(--color-4);
+    gap: 10px;
+}
+
+.music-para-inside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-para {
+    font-size: 0.9rem;
+    color: var(--color-5);
+    align-self: flex-start;
+}
+
+.buynow {
+    align-self: flex-start;
+}
+
+.music-headphone img:hover {
+    width: 100%;
+}
+
+
+/* chose your style */
+.style {
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+
+.style {
+    padding: 30px 15%;
+    background-color: #000000;
+}
+
+.chose-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.chose-style-headphones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.headphone-style {
+    position: absolute;
+    top: -25px;
+}
+
+.headphone-style img {
+    width: 80px;
+}
+
+.different-styles {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    background-color: var(--color-0);
+}
+
+.headphone-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.headphone-price div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 7px;
+    background-color: #000000;
+}
+
+
+.headphone-price div:nth-child(1) {
+    padding-bottom: 8px;
+}
+
+.headphone-price div:nth-child(1) p {
+    font-size: 0.9rem;
+}
+
+.headphone-price div:nth-child(2) img {
+    width: 20px;
+}
+
+
+
+/* footer section */
+footer {
+    padding: 30px 13%;
+    padding-top: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.footer-section {
+    display: flex;
+    gap: 4rem;
+}
+
+
+.footer-email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 8px;
+    background-color: var(--color-0);
+}
+
+
+.footer-email input {
+    border: 0;
+    outline: 0;
+    color: #ffffff;
+    background-color: var(--color-0);
+}
+
+.footer-rightarrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+::placeholder {
+    color: var(--color-3);
+}
+
+
+.footer-subscribe {
+    padding: 8px 10px;
+    border-radius: 8px;
+    background-color: var(--color-4);
+}
+
+
+.footer-subscribe:hover {
+    cursor: pointer;
+}
+
+.footer-rightarrow img {
+    width: 18px;
+    height: 18px;
+}
+
+.footer-rightarrow p {
+    font-size: 0.85rem;
+}
+
+
+.footer-section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+
+.social-meadia-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-meadia-icons img {
+    cursor: pointer;
+}
+
+.footer-list-1 h3 a {
+    text-decoration: none;
+    font-size: 0.95;
+    color: #ffffff;
+}
+
+.footer-list-2 h3 a {
+    text-decoration: none;
+    font-size: 0.95;
+    color: #ffffff;
+}
+
+.footer-list-1 ul li a {
+    text-decoration: none;
+    color: var(--color-5);
+}
+
+.footer-list-2 ul li a {
+    text-decoration: none;
+    color: var(--color-5);
+}
+
+.footer-list-1 ul li, .footer-list-2 ul li {
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.footer-list-1, .footer-list-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.footer-list-1 ul, .footer-list-2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
